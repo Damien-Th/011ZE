@@ -788,7 +788,7 @@ footer a {
     }
 
     footer {
-        height: 50vh;
+        min-height: 50vh;
     }
 
     .wrapplink {
@@ -1009,6 +1009,11 @@ footer a {
 
 @media screen and (max-width: 789px) {
 
+    .container_box {
+        width: 95%;
+        margin: 0 auto;
+    }
+
     .address1 p,
     .address2 p {
         font-size: 2.5em;
@@ -1018,13 +1023,15 @@ footer a {
     .address2 h4 {
         font-size: 1em;
     }
+
     .contentmodal {
         position: relative;
         flex-direction: column;
         width: 80%;
     }
 
-    .modalleft, .modalright {
+    .modalleft,
+    .modalright {
         width: 100%;
         height: 300px;
     }
@@ -1097,29 +1104,36 @@ footer a {
 }
 
 
-.sect2resto, .sect2even {
+.sect2resto,
+.sect2even {
     width: 100%;
     display: flex;
     flex-direction: column;
     height: 50vh;
 }
 
-.sect2restoN3, .sect2evenN3 {
+.sect2restoN3,
+.sect2evenN3 {
     display: flex;
 }
 
-.sect2restoN3 h2, .sect2restoN1, .sect2evenN3 h2, .sect2evenN1 {
+.sect2restoN3 h2,
+.sect2restoN1,
+.sect2evenN3 h2,
+.sect2evenN1 {
     font-family: "Allerta Stencil";
     font-size: 2rem;
     font-weight: lighter;
 }
 
 
-.sect2restoN3 p, .sect2evenN3 p {
+.sect2restoN3 p,
+.sect2evenN3 p {
     font-size: 1.2em;
 }
 
-.sect2restoN1, .sect2evenN1 {
+.sect2restoN1,
+.sect2evenN1 {
     display: flex;
     background-color: white;
     margin-top: -140px;
@@ -1127,42 +1141,50 @@ footer a {
     width: 50%;
 }
 
-.sect2restoN1 h2, .sect2evenN1 h2 {
+.sect2restoN1 h2,
+.sect2evenN1 h2 {
     font-weight: 300;
     font-size: 2em;
     margin: auto;
 }
 
-.sect2restoN1 p , .sect2evenN1 p{
+.sect2restoN1 p,
+.sect2evenN1 p {
     font-size: 1.2em;
 }
 
-.sect2restoN2, .sect2evenN2 {
+.sect2restoN2,
+.sect2evenN2 {
     display: flex;
     width: 50%;
 }
-.sect2restoN2 p, .sect2evenN2 p{
+
+.sect2restoN2 p,
+.sect2evenN2 p {
     margin: auto;
     margin-top: 20px;
     font-size: 1.1em;
     padding-left: 120px;
 }
 
-.sect2restoN3, .sect2evenN3 {
-width: 100%;
+.sect2restoN3,
+.sect2evenN3 {
+    width: 100%;
 }
 
-.sect2restoN3 h2, .sect2evenN3 h2 {
+.sect2restoN3 h2,
+.sect2evenN3 h2 {
     width: 65%;
     margin-top: 80px;
     padding-left: 180px;
 }
 
-.sect2restoN3 p, .sect2evenN3 p {
+.sect2restoN3 p,
+.sect2evenN3 p {
     font-size: 1.3em;
     line-height: 1.5em;
     width: 40%;
-   padding: 60px 220px;
+    padding: 60px 220px;
 }
 
 
@@ -1171,7 +1193,7 @@ width: 100%;
     width: 100%;
 }
 
-.sect1even img{
+.sect1even img {
     width: 100%;
 }
 
@@ -1181,4 +1203,49 @@ width: 100%;
 
 .sect2evenN1 {
     margin-top: -125px;
+}
+
+
+
+@media screen and (max-width: 489px) {
+
+    .contentmodal {
+        margin: 0;
+        height: 600px;
+    }
+
+    .custom-box {
+       width: 450px;
+       height: 400px;
+       margin: 55px 2px 0 25px;
+    }
+
+
+    .copyright {
+            margin-top: 10px;
+    }
+
+    .sect3text {
+        padding: 80px 10px 25px 50px;
+    }
+
+
+    .titresSection1 :nth-child(4) {
+        margin-top: 100px;
+    }
+
+ 
+    #modal {
+        height: 500px;
+        width: 800px;
+    }
+
+    .waffleimg {
+        width: 280px;
+    }
+
+    .titresSection1 {
+        padding-top: 100px;
+    }
+
 }
