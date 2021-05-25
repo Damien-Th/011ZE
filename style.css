@@ -1,0 +1,1184 @@
+/* ------General----- */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: white;
+}
+
+@font-face {
+    font-family: "East Border";
+    src: url("/font/East_Border.woff") format("woff");
+}
+
+/* ------header----- */
+
+header {
+    z-index: 900;
+    position: fixed;
+    top: 0;
+    height: 0;
+    width: 100%;
+}
+
+
+.wrapper {
+    z-index: 1023;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ------NavBar----- */
+
+nav {
+    display: none;
+    opacity: 0;
+}
+
+ul {
+    padding: 0;
+    margin-top: 150px;
+    margin-left: -100px;
+    list-style: none;
+}
+
+li {
+    font-family: "Allerta Stencil";
+    margin: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+}
+
+
+.open {
+    transition-delay: 500ms;
+    opacity: 1;
+    display: block;
+}
+
+.display {
+    transition-duration: 500ms;
+    background-color: black;
+    height: 100vh;
+}
+
+
+
+.menu {
+    margin-top: 50px;
+    margin-right: 50px;
+    display: flex;
+    border: 0;
+    height: 60px;
+    background-color: black;
+}
+
+.menu:hover {
+    cursor: pointer;
+}
+
+/* ------section 1----- */
+
+.titresSection1 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    color: white;
+}
+
+.titresSection1 p {
+    font-size: 800%;
+    margin: 10px;
+    font-family: "East Border", serif;
+}
+
+.one {
+    padding-top: 40px;
+    animation: scale1 1s forwards;
+}
+
+.titresSection1 :nth-child(2) {
+    transition-duration: 500ms;
+    animation: scale2 1s forwards 200ms;
+
+}
+
+.titresSection1 :nth-child(3) {
+    transition-duration: 500ms;
+    animation: scale3 1s forwards 200ms;
+}
+
+@keyframes scale1 {
+    0% {
+        transform: scale(4);
+    }
+
+    75% {
+        transform: scale(0.9) rotate(8deg);
+    }
+
+    100% {
+        transform: scale(1) rotate(8deg);
+    }
+
+}
+
+@keyframes scale2 {
+    0% {
+        transform: scale(4);
+    }
+
+    75% {
+        transform: scale(0.9) rotate(8-deg);
+    }
+
+    100% {
+        transform: scale(1) rotate(-8deg);
+    }
+
+}
+
+@keyframes scale3 {
+    0% {
+        transform: scale(4);
+    }
+
+    75% {
+        transform: scale(0.9) rotate(-8deg);
+    }
+
+    100% {
+        transform: scale(1) rotate(-8deg);
+    }
+
+}
+
+
+.titresSection1 :nth-child(4) {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 3em;
+}
+
+.titresSection1 a img {
+    width: 30px;
+    height: 50px;
+    transform: rotate(0);
+    animation: arrowmove 2s infinite alternate;
+}
+
+@keyframes arrowmove {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+
+.facebookicon img {
+    color: black;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+}
+
+
+
+.section1 {
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+}
+
+
+/* ------section 2----- */
+
+.section2 {
+    padding-top: 60px;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.section2 h2 {
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 4em;
+    font-weight: lighter;
+}
+
+
+.wrapperbox {
+    display: flex;
+}
+
+
+.container_box.box1:hover {
+    color: white;
+    background: url(img/corpo.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.container_box.box2:hover {
+    color: white;
+    background: url(img/reportage.jpg) center no-repeat;
+    background-size: cover;
+}
+
+
+
+
+.container_box {
+    height: 50vh;
+    display: flex;
+    width: 50%;
+}
+
+.container_box :hover {
+    cursor: pointer;
+}
+
+.reservationbox {
+    font-size: 1.5em;
+    text-align: center;
+    margin: auto;
+    background-color: black;
+    color: white;
+    width: 30%;
+    height: 50px;
+    margin-top: 50px;
+}
+
+.reservationbox p {
+    margin: 0;
+    padding: 10px;
+}
+
+.livraison {
+    display: flex;
+    justify-content: flex-start;
+    border-style: dotted;
+    border-left: hidden;
+    border-right: hidden;
+    margin: auto 100px auto 100px;
+    height: 15vh;
+    width: 100%;
+}
+
+.click {
+    display: flex;
+    justify-content: flex-start;
+    border-style: dotted;
+    border-left: hidden;
+    border-right: hidden;
+    margin: auto 100px auto 100px;
+    height: 15vh;
+    width: 100%;
+}
+
+.click h3,
+.livraison h3 {
+    margin: 0;
+    padding: 50px 0;
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 1.75rem;
+    font-weight: lighter;
+}
+
+
+.logo img {
+    padding: 20px 80px;
+    width: 120px;
+    height: 120px;
+}
+
+.container_bar {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container_bar :nth-child(1),
+.container_bar :nth-child(2),
+.container_bar :nth-child(3) {
+    background-color: white;
+    width: 50px;
+    height: 4.5px;
+    margin-top: 5px;
+}
+
+/* ------section 3----- */
+
+.section3 {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    display: flex;
+    min-height: 50vh;
+    margin: auto;
+    width: auto;
+}
+
+.sect3img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 39.1%;
+}
+
+
+.sect3text {
+    padding: 80px 10px 25px 145px;
+    font-size: 1.2rem;
+    margin: 0;
+    margin-top: 55px;
+    width: 70%;
+}
+
+.waves {
+    width: 100%;
+}
+
+.sect3text h3 {
+    font-family: "Allerta Stencil";
+    font-size: 2rem;
+    font-weight: lighter;
+    margin: 0;
+}
+
+
+
+/* ------section 4----- */
+.section4 {
+    margin-top: -82px;
+    display: flex;
+    min-height: 90vh;
+    width: auto;
+}
+
+.skullflag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 67.1%;
+    background-color: #C9F3FF;
+}
+
+
+.skullflag_icon {
+    height: auto;
+    width: 500px;
+    margin-bottom: 80px;
+    margin-top: 30px;
+}
+
+.skullflag_icon img {
+    width: 100%;
+}
+
+.waffleimg {
+    width: 380px;
+}
+
+.truckimg {
+    width: 348px;
+}
+
+.truck img {
+    width: 100%;
+}
+
+.waffle img {
+    width: 100%;
+}
+
+
+.trucNwaffle {
+    width: 32.9%;
+    height: 90vh;
+}
+
+.skullflag p,
+.waffle p,
+.truck p {
+    margin: 0;
+    position: absolute;
+    bottom: 20px;
+    left: 100px;
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+
+.truck {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45vh;
+    background-color: rgb(243, 209, 168);
+}
+
+.waffle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 45vh;
+    background-color: #DFDFDF;
+}
+
+
+.waffle p,
+.truck p {
+    position: absolute;
+    left: 60px;
+}
+
+
+
+
+/* ------section 5----- */
+.section5 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 60vh;
+}
+
+.sect5 {
+    width: 85%;
+}
+
+.section5 h2 {
+    font-size: 4em;
+    font-weight: lighter;
+    font-family: "Allerta Stencil";
+    margin-bottom: 40px;
+}
+
+.section5 h4 {
+    margin-top: 0;
+    font-size: 1.2em;
+    font-weight: lighter;
+}
+
+.sect5text {
+    display: flex;
+}
+
+.sect5text :first-child {
+    line-height: 1.2em;
+    font-size: 1.5em;
+    font-family: "Allerta Stencil";
+    padding-right: 30px;
+    width: 50%;
+    margin-bottom: 80px;
+}
+
+.sect5text :last-child {
+    font-size: 1.4em;
+    line-height: 1.4em;
+    width: 50%;
+    margin-bottom: 80px;
+}
+
+.leconcept {
+    position: absolute;
+    bottom: -45px;
+    z-index: 10;
+    text-align: center;
+    color: white;
+    width: 220px;
+    height: 60px;
+    background-color: black;
+    padding-bottom: 30px;
+}
+
+.leconcept p {
+    font-size: 1.9em;
+    font-family: "Allerta Stencil";
+}
+
+/* ------section 6----- */
+.section6 {
+    max-height: 100vh;
+}
+
+.sect6 {
+    display: block;
+}
+
+.section6 img {
+    width: 100%;
+}
+
+/* ------section 7----- */
+
+.section7 {
+    display: flex;
+    min-height: 40vh;
+    width: auto;
+}
+
+.section7 h4 {
+    padding: 20px 0 0 50px;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.section7 h2 {
+    font-size: 4em;
+    font-family: "Allerta Stencil";
+    padding: 0 0 0 50px;
+    margin-bottom: 0;
+}
+
+.sect7text {
+    margin-top: -80px;
+    width: 58%;
+    color: white;
+    background-color: black;
+}
+
+.p1 {
+    padding: 0 100px 0 50px;
+    line-height: 1.2em;
+    font-size: 1.6em;
+    font-family: "Allerta Stencil";
+}
+
+.p2 {
+    padding: 0 80px 0 50px;
+    font-size: 1.4em;
+}
+
+
+.picsbretagne {
+    width: 42%;
+}
+
+.picsbretagne img {
+    margin-top: 60px;
+    margin-left: 50px;
+    max-width: 70%;
+}
+
+/* ------section 8----- */
+
+.section8 {
+    display: flex;
+}
+
+.section8 img {
+    width: 20%;
+}
+
+/* ------footer----- */
+
+footer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: auto;
+    color: white;
+    height: 40vh;
+    background: url(img/footer.jpg) center no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+    padding: 50px 25px;
+    margin: auto;
+}
+
+
+
+footer a {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-decoration: none;
+    line-height: 1.2;
+    font-size: 40px;
+}
+
+.footerlink1 {
+    margin-right: 80px;
+}
+
+.containerlink {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.containerlink a:hover {
+    text-decoration: underline;
+}
+
+.wrapplink {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.fblink {
+    margin-top: 20px;
+    width: 50px;
+    height: 30px;
+}
+
+/* ----------------Responsive--------------------- */
+
+
+@media screen and (max-width: 1540px) {
+
+    .sect3img {
+        width: 40.4%;
+    }
+
+    .picsbretagne img {
+        margin-top: 65px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .titresSection1 p {
+        font-size: 400%;
+    }
+
+
+    .titresSection1 :nth-child(4) {
+        margin-top: 280px;
+    }
+}
+
+
+
+@media screen and (max-width: 789px) {
+
+
+    .section4 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skullflag {
+        width: 100%;
+    }
+
+    .trucNwaffle {
+        width: 100%;
+    }
+
+
+    .section2 {
+        height: auto;
+    }
+
+    .reservationbox {
+        width: 90%;
+    }
+
+    .wrapperbox {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container_box {
+        width: 100%;
+        height: auto;
+    }
+
+    .click,
+    .livraison {
+        margin: 0;
+    }
+
+    .sect3text {
+        padding: 80px 10px 25px 105px;
+    }
+
+
+    .section3 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sect3img {
+        width: 100%;
+    }
+
+    .sect3text {
+        padding-right: 0;
+    }
+
+    .sect5text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sect5text :first-child {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .sect5text :last-child {
+        width: 100%;
+        padding-right: 30px;
+    }
+
+
+    .section7 {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .sect7text {
+        margin-top: -10px;
+        width: 100%;
+    }
+
+    .picsbretagne {
+        width: 100%;
+    }
+
+
+    .section8 img {
+        width: 50%;
+    }
+
+    .section8 {
+        flex-wrap: wrap;
+    }
+
+
+
+
+    footer a {
+        font-size: 35px;
+    }
+
+    footer {
+        height: 50vh;
+    }
+
+    .wrapplink {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
+
+    .footerlink1 {
+        margin: 0;
+    }
+
+}
+
+
+@media screen and (max-width: 560px) {
+    .section8 img {
+        width: 100%;
+    }
+}
+
+
+
+
+/*-----------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+/*Modal*/
+.custom-box {
+    z-index: 1500;
+    width: 100%;
+    margin: auto;
+    color: white;
+}
+
+#modal {
+    z-index: 1500;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contentmodal {
+    z-index: 1500;
+    margin: auto;
+    display: flex;
+    width: 50%;
+    height: 500px;
+}
+
+.modalleft {
+    width: 50%;
+    height: 500px;
+}
+
+.modalleft img {
+    width: 100%;
+    height: 500px;
+}
+
+.modalcross img {
+    z-index: 1500;
+    width: 50px;
+    cursor: pointer;
+}
+
+.modalcross img:hover {
+    cursor: pointer;
+}
+
+#modal-close {
+    cursor: pointer;
+}
+
+.modalright {
+    background-color: white;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.modalcross {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modalright p {
+    color: black;
+    margin: 5px 10px;
+    font-family: "Allerta Stencil";
+    font-size: 2em;
+    padding: 0px 20px 30px 20px;
+}
+
+.modalresa {
+    width: fit-content;
+    font-size: 1.5em;
+    margin: auto;
+    padding: 10px 30px;
+    margin-top: 90px;
+    text-align: center;
+    background-color: black;
+}
+
+
+.modalresa a {
+    text-decoration: none;
+    color: white;
+}
+
+/*---------------nosEtablissements----------------------*/
+
+.sect1resto {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.sect1resto img {
+    padding-top: 20px;
+    background-color: black;
+    color: white;
+    width: 40%;
+}
+
+.wrapper2 {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+
+.containeradress {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+.address1 h4,
+.address2 h4 {
+    font-size: 1.8em;
+    margin-top: 70px;
+    margin-bottom: 10px;
+}
+
+
+.address1 p,
+.address2 p {
+    font-size: 3.5em;
+    font-family: "Allerta Stencil";
+    text-decoration: underline;
+    margin-top: 0;
+}
+
+.address1 {
+    text-align: center;
+    width: 50%;
+}
+
+.address2 {
+    text-align: center;
+    width: 50%;
+}
+
+
+.copyright2 p {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 1189px) {
+    .containeradress {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .address1,
+    .address2 {
+        width: auto;
+    }
+
+
+    .address1 p,
+    .address2 p {
+        display: flex;
+        justify-content: ce;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .wrapper2 {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 789px) {
+
+    .address1 p,
+    .address2 p {
+        font-size: 2.5em;
+    }
+
+    .address1 h4,
+    .address2 h4 {
+        font-size: 1em;
+    }
+    .contentmodal {
+        position: relative;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .modalleft, .modalright {
+        width: 100%;
+        height: 300px;
+    }
+
+    .modalcross {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .modalright p {
+        font-size: 1.5em;
+        padding: 20px 50px 0px 100px;
+    }
+
+    .modalresa {
+        font-size: 1em;
+        margin-top: 20px;
+        width: 70%;
+        margin-bottom: 15px;
+    }
+
+    .logo img {
+        padding: 10px 10px;
+    }
+
+    .menu {
+        margin-right: 10px;
+    }
+
+}
+
+
+.nosrestaurant {
+    display: flex;
+    width: 100%;
+    height: 50vh;
+}
+
+.restoimg {
+    width: 50%;
+}
+
+.restoimg img {
+    width: 100%;
+    height: 50vh;
+}
+
+.restotext {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    font-weight: 500;
+    font-size: 1.6em;
+}
+
+.restotext p {
+    margin-left: 100px;
+}
+
+.pp1 {
+    color: white;
+    background-color: black;
+}
+
+.sectrestaurant a:link {
+    text-decoration: none;
+}
+
+
+.sect2resto, .sect2even {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+}
+
+.sect2restoN3, .sect2evenN3 {
+    display: flex;
+}
+
+.sect2restoN3 h2, .sect2restoN1, .sect2evenN3 h2, .sect2evenN1 {
+    font-family: "Allerta Stencil";
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+
+.sect2restoN3 p, .sect2evenN3 p {
+    font-size: 1.2em;
+}
+
+.sect2restoN1, .sect2evenN1 {
+    display: flex;
+    background-color: white;
+    margin-top: -140px;
+    height: 20vh;
+    width: 50%;
+}
+
+.sect2restoN1 h2, .sect2evenN1 h2 {
+    font-weight: 300;
+    font-size: 2em;
+    margin: auto;
+}
+
+.sect2restoN1 p , .sect2evenN1 p{
+    font-size: 1.2em;
+}
+
+.sect2restoN2, .sect2evenN2 {
+    display: flex;
+    width: 50%;
+}
+.sect2restoN2 p, .sect2evenN2 p{
+    margin: auto;
+    margin-top: 20px;
+    font-size: 1.1em;
+    padding-left: 120px;
+}
+
+.sect2restoN3, .sect2evenN3 {
+width: 100%;
+}
+
+.sect2restoN3 h2, .sect2evenN3 h2 {
+    width: 65%;
+    margin-top: 80px;
+    padding-left: 180px;
+}
+
+.sect2restoN3 p, .sect2evenN3 p {
+    font-size: 1.3em;
+    line-height: 1.5em;
+    width: 40%;
+   padding: 60px 220px;
+}
+
+
+.sect1even {
+    height: 100vh;
+    width: 100%;
+}
+
+.sect1even img{
+    width: 100%;
+}
+
+.sect2evenN2 {
+    background-color: white;
+}
+
+.sect2evenN1 {
+    margin-top: -125px;
+}
